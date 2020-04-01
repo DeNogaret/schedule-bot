@@ -4,7 +4,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const TOKEN = '1022558790:AAE-bPjpFE8OwfuWctCOK-ukWWRnO6zyeTc';
 console.log('Bot has been started....');
 
-const bot = new TelegramBot(TOKEN, {longpolling: true});
+const bot = new TelegramBot(TOKEN, {polling: true});
 // const bot = new TelegramBot(TOKEN, {
 //     polling: {
 //         interval: 3000,
