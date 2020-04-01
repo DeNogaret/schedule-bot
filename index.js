@@ -4,16 +4,15 @@ const TelegramBot = require('node-telegram-bot-api');
 const TOKEN = '1022558790:AAE-bPjpFE8OwfuWctCOK-ukWWRnO6zyeTc';
 console.log('Bot has been started....');
 
-const bot = new TelegramBot(TOKEN, {polling: true});
-// const bot = new TelegramBot(TOKEN, {
-//     polling: {
-//         interval: 3000,
-//         autoStart: true,
-//         params: {
-//             timeout: 10
-//         }
-//     }
-// });
+const bot = new TelegramBot(TOKEN, {
+     	polling: {
+        interval: 3000,
+	autoStart: true,
+	   params: {
+	       timeout: 10
+	   }
+	}
+	});
 
 bot.on ('message', function(msg)  {
     const chatId = msg.chat.id;
