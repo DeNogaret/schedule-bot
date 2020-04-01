@@ -31,7 +31,7 @@ bot.on ('message', function(msg)  {
         bot.sendPhoto(chatId, './4.jpg')
     }
     else {
-        bot.sendMessage(chatId,  's',{
+        bot.sendMessage(chatId, 'Please choose the day of the week.', {
             reply_markup: {
                 keyboard: [
                     ['Mon(Even)', 'Mon(Odd)'],
