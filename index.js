@@ -15,7 +15,7 @@ const bot = new TelegramBot(TOKEN, {polling: true});
 //     }
 // });
 
-bot.on ('message', (msg) => {
+bot.on ('message', function(msg)  {
     const chatId = msg.chat.id;
 
     if (msg.text === 'Mon(Odd)') {
