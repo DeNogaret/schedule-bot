@@ -21,13 +21,13 @@ bot.on ('message', function(msg)  {
         bot.sendPhoto(chatId, './1.jpg')
     } else if (msg.text === 'Mon(Even)') {
         bot.sendPhoto(chatId, './5.jpg')
-    } else if (msg.text === 'Tue(Even)' || msg.text === 'Tue(Odd)'){
+    } else if (msg.text === 'Tue'){
         bot.sendPhoto(chatId, './2.jpg')
     } else if (msg.text === 'Wed(Odd)') {
         bot.sendPhoto(chatId, './3.jpg')
     } else if (msg.text === 'Wed(Even)') {
         bot.sendPhoto(chatId, './7.jpg')
-    } else if (msg.text === 'Thu(Even)' || msg.text === 'Thu(Odd)'){
+    } else if (msg.text === 'Thu'){
         bot.sendPhoto(chatId, './4.jpg')
     }
     else {
@@ -35,9 +35,11 @@ bot.on ('message', function(msg)  {
             reply_markup: {
                 keyboard: [
                     ['Mon(Even)', 'Mon(Odd)'],
-                    ['Tue(Even)', 'Tue(Odd)'],
+                    ['Tue'],
+                    // ['Tue(Even)', 'Tue(Odd)'],
                     ['Wed(Even)', 'Wed(Odd)'],
-                    ['Thu(Even)', 'Thu(Odd)'],
+                    ['Thu'],
+                    // ['Thu(Even)', 'Thu(Odd)'],
                 ]
             }
         })
